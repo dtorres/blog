@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/blog/css/normalize.css">
+<link rel="stylesheet" href="/blog/css/skeleton.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
+<link rel="stylesheet" href="/blog/css/monokai.css">
+<link rel="alternate" href="/blog/index.xml" type="application/rss+xml" title="Eso po">
+<title>Collatz conjecture and IndexSets - Eso po</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Collatz conjecture and IndexSets</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2016-11-21">November 21, 2016</time></span>
+			<section itemprop="entry-text">
+				
+
+<p>I was watching <a href="https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A">Numberphile</a> videos when I stumbled upon the <a href="https://www.youtube.com/watch?v=5mFpVDpKX70">Collatz conjecture</a>. It’s a mind boggling complex positive integer sequence derived from a function with 2 rules:</p>
+
+<ul>
+<li>If n is even, divide by 2<br /></li>
+<li>If n is odd, triple it and add one<br /></li>
+</ul>
+
+<p>This process is repeated until 1 is reached, which, as seen from the previous rules, recurses into [1, 4, 2, 1…]. But, do all numbers reach 1 eventually? Is there any number that short circuits this recurses in another way? such that:</p>
+
+<ul>
+<li>even X, odd Y: [X, Y, Y*3+1,…,X]</li>
+</ul>
+
+<p>The conjecture says there is no such number, so far nobody has come up with such number proving otherwise and to further complicate things, it’s impossible to algorithmically find such a number<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup></p>
+
+<p>When I considered the problem the first time, it struck me as “obvious” that any number will converge to 1. Due to the nature of the first rule, the sequence has a “root branch” consisting of the power of 2. The second rule is there to “correct” the path of the sequence back to that root given that it will rollercoaster the sequence until it finds a power of 2.</p>
+
+<h2 id="enter-the-indexsets">Enter the IndexSets</h2>
+
+<p>No longer interested in finding proof for this, I wanted to illustrate the periodicity of branches until they reached the current tree, to do this I needed a set to quickly find if a number was already part of the tree but considering we are talking of relatively consecutive numbers with a rapidly increasing growth, a simple set would be huge and probably explode my computer.<br />
+IndexSets are a great solution here, it allows to quickly find a number and efficiently store the found numbers, except… there is no IndexSet structure in Swift<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup>.</p>
+
+<h2 id="implementing-indexset">Implementing IndexSet</h2>
+
+<p>An IndexSet contains seemingly unordered numbers, but exploiting the sequentiality, they can be grouped in sorted ranges, so I will use <code>Array&lt;Range&lt;Int&gt;&gt;</code> <sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>. To run the sequence, only insertion and search are required so I’ll forgo the rest methods of a Set for brevity.<br />
+Both methods shall have a O(log(n)) complexity following a <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a>.</p>
+<pre><code class="language-swift highlight" data-lang="swift"><span class="kd">struct</span> <span class="kt">IndexSet</span> <span class="p">{</span>
+    <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">ranges</span><span class="p">:</span> <span class="p">[</span><span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">]</span>
+
+    <span class="kd">private</span> <span class="kd">func</span> <span class="nf">_indexOfRangeContainingOrAdjacent</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">var</span> <span class="nv">min</span> <span class="o">=</span> <span class="n">ranges</span><span class="o">.</span><span class="n">startIndex</span>
+        <span class="k">var</span> <span class="nv">max</span> <span class="o">=</span> <span class="n">ranges</span><span class="o">.</span><span class="n">endIndex</span>
+        
+        <span class="k">while</span> <span class="n">min</span> <span class="o">&lt;</span> <span class="n">max</span> <span class="p">{</span>
+            <span class="k">let</span> <span class="nv">mid</span> <span class="o">=</span> <span class="p">(</span><span class="n">min</span> <span class="o">+</span> <span class="n">max</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+            <span class="k">let</span> <span class="nv">range</span> <span class="o">=</span> <span class="n">ranges</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">member</span> <span class="o">&lt;</span> <span class="n">range</span><span class="o">.</span><span class="n">lowerBound</span> <span class="p">{</span>
+                <span class="n">max</span> <span class="o">=</span> <span class="n">mid</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="n">member</span> <span class="o">&gt;=</span> <span class="n">range</span><span class="o">.</span><span class="n">upperBound</span> <span class="p">{</span>
+                <span class="n">min</span> <span class="o">=</span> <span class="n">mid</span><span class="o">+</span><span class="mi">1</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="nf">return</span> <span class="p">(</span><span class="n">mid</span><span class="p">,</span> <span class="kc">true</span><span class="p">)</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        <span class="nf">return</span> <span class="p">(</span><span class="n">min</span><span class="p">,</span> <span class="kc">false</span><span class="p">)</span>
+    <span class="p">}</span>
+
+    <span class="kd">func</span> <span class="nf">contains</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nf">_indexOfRangeContainingOrAdjacent</span><span class="p">(</span><span class="n">member</span><span class="p">)</span><span class="o">.</span><span class="mi">1</span>
+    <span class="p">}</span>
+    
+    <span class="k">mutating</span> <span class="kd">func</span> <span class="nf">insert</span><span class="p">(</span><span class="n">_</span> <span class="nv">newMember</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">guard</span> <span class="o">!</span><span class="n">ranges</span><span class="o">.</span><span class="n">isEmpty</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">ranges</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">newMember</span><span class="o">..&lt;</span><span class="n">newMember</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        <span class="nf">var</span> <span class="p">(</span><span class="n">idx</span><span class="p">,</span> <span class="n">contains</span><span class="p">)</span> <span class="o">=</span> <span class="nf">_indexOfRangeContainingOrAdjacent</span><span class="p">(</span><span class="n">newMember</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">contains</span> <span class="p">{</span> <span class="k">return</span> <span class="p">}</span>
+        
+        <span class="c1">//New member is outside upper bound</span>
+        <span class="k">if</span> <span class="n">idx</span> <span class="o">==</span> <span class="n">ranges</span><span class="o">.</span><span class="n">endIndex</span> <span class="p">{</span>
+            <span class="k">var</span> <span class="nv">range</span> <span class="o">=</span> <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="c1">//New member can be added to adjacent range</span>
+            <span class="k">if</span> <span class="n">range</span><span class="o">.</span><span class="n">upperBound</span> <span class="o">==</span> <span class="n">newMember</span> <span class="p">{</span>
+                <span class="n">idx</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">range</span> <span class="o">=</span> <span class="n">range</span><span class="o">.</span><span class="n">lowerBound</span><span class="o">..&lt;</span><span class="n">newMember</span><span class="o">+</span><span class="mi">1</span>
+                <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">range</span>
+            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                <span class="n">ranges</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">newMember</span><span class="o">..&lt;</span><span class="n">newMember</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="p">}</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        
+        <span class="c1">//New member can be added to adjacent range</span>
+        <span class="k">var</span> <span class="nv">range</span> <span class="o">=</span> <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">newMember</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">==</span> <span class="n">range</span><span class="o">.</span><span class="n">lowerBound</span> <span class="p">{</span>
+            <span class="n">range</span> <span class="o">=</span> <span class="n">newMember</span><span class="o">..&lt;</span><span class="n">range</span><span class="o">.</span><span class="n">upperBound</span>
+            
+            <span class="c1">//Merge with previous adjacent if needed</span>
+            <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">upperBound</span> <span class="o">==</span> <span class="n">range</span><span class="o">.</span><span class="n">lowerBound</span> <span class="p">{</span>
+                <span class="n">idx</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="k">let</span> <span class="nv">prevRange</span> <span class="o">=</span> <span class="n">ranges</span><span class="o">.</span><span class="nf">remove</span><span class="p">(</span><span class="nv">at</span><span class="p">:</span> <span class="n">idx</span><span class="p">)</span>
+                <span class="n">range</span> <span class="o">=</span> <span class="n">prevRange</span><span class="o">.</span><span class="n">lowerBound</span><span class="o">..&lt;</span><span class="n">range</span><span class="o">.</span><span class="n">upperBound</span>
+            <span class="p">}</span>
+            <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">range</span>
+            <span class="k">return</span>
+        <span class="p">}</span>
+        
+        <span class="k">if</span> <span class="n">idx</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="p">{</span>
+            <span class="n">range</span> <span class="o">=</span> <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+            <span class="c1">//New member can be added to adjacent range</span>
+            <span class="k">if</span> <span class="n">range</span><span class="o">.</span><span class="n">upperBound</span> <span class="o">==</span> <span class="n">newMember</span> <span class="p">{</span>
+                <span class="n">idx</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="n">range</span> <span class="o">=</span> <span class="n">range</span><span class="o">.</span><span class="n">lowerBound</span><span class="o">..&lt;</span><span class="n">newMember</span><span class="o">+</span><span class="mi">1</span>
+                <span class="n">ranges</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span> <span class="o">=</span> <span class="n">range</span>
+                <span class="k">return</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+        
+        <span class="c1">//New member is not adjacent to existing ranges</span>
+        <span class="n">range</span> <span class="o">=</span> <span class="n">newMember</span><span class="o">..&lt;</span><span class="n">newMember</span><span class="o">+</span><span class="mi">1</span>
+        <span class="n">ranges</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">range</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="n">idx</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<p>Now that we have a simplified IndexSet, I present you, the utterly simple Collatz conjecture:</p>
+<pre><code class="language-swift highlight" data-lang="swift"><span class="kd">extension</span> <span class="kt">IndexSet</span> <span class="p">{</span>
+    <span class="kd">func</span> <span class="nf">lowestNotContainedMember</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="n">ranges</span><span class="o">.</span><span class="n">first</span><span class="o">!.</span><span class="n">upperBound</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">var</span> <span class="nv">collatzFound</span> <span class="o">=</span> <span class="kt">IndexSet</span><span class="p">()</span>
+<span class="n">collatzFound</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="kd">func</span> <span class="nf">even</span><span class="p">(</span><span class="n">_</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">num</span><span class="o">/</span><span class="mi">2</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">odd</span><span class="p">(</span><span class="n">_</span> <span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
+    <span class="nf">return</span> <span class="p">(</span><span class="mf">3*</span><span class="n">num</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nf">collatzBranch</span><span class="p">(</span><span class="nv">num</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]</span> <span class="p">{</span>
+    <span class="k">var</span> <span class="nv">branch</span> <span class="o">=</span> <span class="p">[</span><span class="kt">Int</span><span class="p">]()</span>
+    <span class="k">var</span> <span class="nv">lastNum</span> <span class="o">=</span> <span class="n">num</span>
+    <span class="k">while</span> <span class="o">!</span><span class="n">collatzFound</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">lastNum</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">branch</span><span class="o">.</span><span class="nf">append</span><span class="p">(</span><span class="n">lastNum</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">lastNum</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+            <span class="n">lastNum</span> <span class="o">=</span> <span class="nf">even</span><span class="p">(</span><span class="n">lastNum</span><span class="p">)</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+            <span class="n">lastNum</span> <span class="o">=</span> <span class="nf">odd</span><span class="p">(</span><span class="n">lastNum</span><span class="p">)</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">branch</span>
+<span class="p">}</span>
+<span class="k">let</span> <span class="nv">numberOfBranches</span> <span class="o">=</span> <span class="mi">1000</span>
+<span class="k">for</span> <span class="n">_</span> <span class="k">in</span> <span class="mi">0</span><span class="o">..&lt;</span><span class="n">numberOfBranches</span> <span class="p">{</span>
+    <span class="k">let</span> <span class="nv">nextNum</span> <span class="o">=</span> <span class="n">collatzFound</span><span class="o">.</span><span class="nf">lowestNotContainedMember</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">nextNum</span><span class="o">%</span><span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+    	<span class="n">collatzFound</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">nextNum</span><span class="p">)</span>
+		<span class="k">continue</span>
+    <span class="p">}</span>
+    <span class="k">let</span> <span class="nv">branch</span> <span class="o">=</span> <span class="nf">collatzBranch</span><span class="p">(</span><span class="nv">num</span><span class="p">:</span> <span class="n">nextNum</span><span class="p">)</span>
+    <span class="n">branch</span><span class="o">.</span><span class="n">forEach</span><span class="p">{</span><span class="n">collatzFound</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">$0</span><span class="p">)}</span>
+    <span class="nf">print</span><span class="p">(</span> <span class="s">"</span><span class="se">\(</span><span class="n">branch</span><span class="se">)</span><span class="s"> {</span><span class="se">\(</span><span class="n">collatzFound</span><span class="o">.</span><span class="n">ranges</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s">, </span><span class="se">\(</span><span class="n">collatzFound</span><span class="o">.</span><span class="n">ranges</span><span class="o">.</span><span class="n">capacity</span><span class="se">)</span><span class="s">}"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<p>And here is a sample of the output with the first 5 “branches”</p>
+
+<pre><code>[3, 10, 5, 16, 8, 4] {4, 8}
+[7, 22, 11, 34, 17, 52, 26, 13, 40, 20] {10, 16}
+[9, 28, 14] {10, 16}
+[15, 46, 23, 70, 35, 106, 53, 160, 80] {13, 16}
+[19, 58, 29, 88, 44] {15, 16}
+</code></pre>
+
+<p>In a run of 1000 iterations, the IndexSet “holds” 8105 entries in 3536 ranges. Isn’t that cool? (I mean, you are still reading after all).</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://en.m.wikipedia.org/wiki/Collatz_conjecture#Undecidable_generalizations">Collatz conjecture - Wikipedia</a>
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2">In the standard library that is. There is one in Foundation which involves bridging and a lame article.
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+<li id="fn:3">Why not a ClosedRange? I didn’t think of them at the time and an open range works just fine.
+ <a class="footnote-return" href="#fnref:3">↩</a></li>
+</ol>
+</div>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:contact@dtorres.me" target="_blank">Email</a>
+			<a href="https://twitter.com/dtorres" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/dtorres" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; Diego Torres (and Aatr tits)</div>
+	</footer>
+
+</div>
+
+
+
+</body>
+</html>

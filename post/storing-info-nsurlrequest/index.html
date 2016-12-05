@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/blog/css/normalize.css">
+<link rel="stylesheet" href="/blog/css/skeleton.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
+<link rel="stylesheet" href="/blog/css/monokai.css">
+<link rel="alternate" href="/blog/index.xml" type="application/rss+xml" title="Eso po">
+<title>Storing related data in NSURLRequest - Eso po</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">Storing related data in NSURLRequest</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2015-11-02">November 02, 2015</time></span>
+			<section itemprop="entry-text">
+				
+
+<p>Basically what we are going to do is use and profit from <code>NSURLRequest</code>&rsquo;s being conformant to <code>NSCoding</code>, and a little known API from <code>NSURLProtocol</code> which allows us attach info to requests.</p>
+<pre><code class="language-objc highlight" data-lang="objc"><span class="c1">//Step 0: For the purpose of this gist, we'll already have a 
+//background session setup and assume a bunch of stuff.
+</span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">bgSession</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSession</span> <span class="nf">magicMethodWhichGivesMeTheAlreadySetupSession</span><span class="p">];</span> 
+<span class="c1">//Geeez, Methods are long in Obj-C.
+</span>
+<span class="c1">//IMPORTANT: Request must be mutable in order for this to work. 
+//Got an immutable one?. Make a copy. Can't? Well, Make it so!.
+//Step 1: Setup your basic request.
+</span><span class="n">NSMutableURLRequest</span> <span class="o">*</span><span class="n">mutableRequest</span> <span class="o">=</span> <span class="p">...;</span>
+
+<span class="c1">//Step 2: Have some values to store under our request.
+//IMPORTANT 2: All Keys and values must be encodable, so no 
+//custom classes or you will cry when your device explodes.
+//You have been notified.
+</span><span class="k">static</span> <span class="n">NSString</span> <span class="o">*</span><span class="k">const</span> <span class="n">DAKey</span> <span class="o">=</span> <span class="s">@"ThePathToTheTruth"</span><span class="p">;</span>
+<span class="n">NSDictionary</span> <span class="o">*</span><span class="n">aBunchOfValues</span> <span class="o">=</span> <span class="p">@{...};</span>
+
+<span class="c1">//Step 3: Store the values using NSURLProtocol API.
+</span><span class="p">[</span><span class="n">NSURLProtocol</span> <span class="nf">setProperty</span><span class="p">:</span><span class="n">aBunchOfValues</span> 
+                    <span class="nf">forKey</span><span class="p">:</span><span class="n">DAKey</span> 
+                 <span class="n">inRequest</span><span class="o">:</span><span class="n">mutableRequest</span><span class="p">];</span>
+
+<span class="c1">//Step 4: Create your task and resume it. 
+//(We gotta do the request sometime right?)
+</span><span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">task</span><span class="p">;</span>
+<span class="n">task</span> <span class="o">=</span> <span class="p">[</span><span class="n">bgSession</span> <span class="nf">downloadTaskWithRequest</span><span class="p">:</span><span class="n">mutableRequest</span><span class="p">];</span>
+<span class="p">[</span><span class="n">task</span> <span class="nf">resume</span><span class="p">];</span>
+</code></pre>
+<p>And now, now your app <strong>DIEEEES, DIE APP, DIEEEEE.</strong><br />
+OK, now that we took care of that, well, that&rsquo;s it folks, bye!.</p>
+
+<blockquote>
+<p>&ndash; <em>hey, what happened with my request and my bunch of values!, the app is dead, I&rsquo;ll never get them back.</em></p>
+</blockquote>
+
+<h2 id="coming-back-from-the-8th-dead-lock-of-hell">Coming back from the 8th dead(lock) of hell</h2>
+
+<p>Calm down&hellip; remember <code>NSURLRequest</code>&rsquo;s conform to <code>NSCoding</code>? well, <code>NSURLSession</code>&rsquo;s have to store the info of the request <em>somewhere</em>, well, turns out they use <code>NSCoding</code> to do that, which is kinda the duh solution but you never know with Apple.</p>
+
+<p>So&hellip; <code>NSURLProtocol</code> basically uses some private methods to modify the info of the <code>NSURLMutableRequest</code>. (See, that&rsquo;s why it has to be mutable). Which then tags along when encoded by the session.</p>
+
+<blockquote>
+<p>&ndash; <em>Oh, OK, got it, can you show me how to get the info back out now?</em></p>
+</blockquote>
+
+<p>Sure!, at some point, either your app was launched by the system or the user and you got ahold of the task again.<br />
+How? well, go watch the nice talk by <a href="https://twitter.com/purpleyay">@purpleyay</a><sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, she tells you how.</p>
+<pre><code class="language-objc highlight" data-lang="objc"><span class="c1">//Step 5: Get ahold of your task
+</span><span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">ourPreviousTask</span> <span class="o">=</span> <span class="p">...;</span>
+<span class="c1">//Wow, I love I can get away with code with 3 simple dots.
+</span>
+<span class="c1">//Step 6 (And finally, yey!): Getting the info out.
+</span><span class="n">NSURLRequest</span> <span class="o">*</span><span class="n">originalRequest</span> <span class="o">=</span> <span class="n">ourPreviousTask</span><span class="p">.</span><span class="n">originalRequest</span>
+<span class="n">NSDictionary</span> <span class="o">*</span><span class="n">aBunchOfValues</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLProtocol</span> <span class="nf">propertyForKey</span><span class="p">:</span><span class="n">DAKey</span> 
+                                    <span class="nf">inRequest</span><span class="p">:</span><span class="n">originalRequest</span><span class="p">];</span>
+</code></pre>
+<p>That&rsquo;s it, you have all the info you need</p>
+
+<p><strong>NOTE:</strong> I haven&rsquo;t tested the limits of storage in this method but the API was done to hold simple keys and values so don&rsquo;t you dare store your whole database of kitten images there. Thank you.</p>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="https://realm.io/news/gwendolyn-weston-ios-background-networking/">https://realm.io/news/gwendolyn-weston-ios-background-networking/</a>
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+</ol>
+</div>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:contact@dtorres.me" target="_blank">Email</a>
+			<a href="https://twitter.com/dtorres" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/dtorres" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; Diego Torres (and Aatr tits)</div>
+	</footer>
+
+</div>
+
+
+
+</body>
+</html>
