@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/blog/css/normalize.css">
+<link rel="stylesheet" href="/blog/css/skeleton.css">
+<link rel="stylesheet" href="/blog/css/custom.css">
+<link rel="stylesheet" href="/blog/css/monokai.css">
+<link rel="alternate" href="/blog/index.xml" type="application/rss+xml" title="Eso po">
+<title>[Proposal] Rename fatalError() API - Eso po</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="http://schema.org/BlogPosting">
+			<h1 class="entry-title" itemprop="headline">[Proposal] Rename fatalError() API</h1>
+			<span class="entry-meta"><time itemprop="datePublished" datetime="2017-01-06">January 06, 2017</time></span>
+			<section itemprop="entry-text">
+				
+
+<p><strong>Note:</strong> The following text was first posted in the Swift evolution mailing list</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This function was introduced along others to halt execution of the running instance to convey a state of affairs without resolution whatsoever. This proposal lays the case that this function is not performing its stated mission and attempts to help it come forward with its real intentions in order  to have a better conformance with the Swift naming guidelines.</p>
+
+<h2 id="motivation">Motivation</h2>
+
+<p>The main motivation to this proposal is to act as a catalyst for the community to acknowledge the identity of this function and stay true to the values bestowed upon us by Chris Lattner and his disciples, the Core Team.</p>
+
+<p>As evidenced in a quick search over a the great repository of Gitxandria we are witness to several examples of the true calling of fatalError(). A few examples are cited below for those who receive this letter in print.</p>
+<pre><code class="language-swift highlight" data-lang="swift"><span class="c1">//Example 1</span>
+<span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+<span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Today's horoscope is: </span><span class="se">\(</span><span class="n">response</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">break</span>
+<span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+    <span class="nf">fatalError</span><span class="p">(</span><span class="s">"Present </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s"> to user"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">//Example 2</span>
+<span class="kd">func</span> <span class="nf">cell</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cell</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">Cell</span><span class="p">(</span><span class="n">horses</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mi">10</span><span class="o">..&lt;</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">Cell</span><span class="p">(</span><span class="n">ponies</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+    <span class="p">}</span>
+    
+    <span class="nf">fatalError</span><span class="p">(</span><span class="s">"Unicorns go here"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<p>As seen in the previous examples, the calling of fatalError is seldom that.</p>
+
+<h2 id="proposed-solution">Proposed solution</h2>
+
+<p>The proposed solution is to rename <code>fatalError(_ message: String)</code> to <code>willItToCompile(finishLater: String)</code> to convey the right terminology for it&rsquo;s calling. Here are the revised examples:</p>
+<pre><code class="language-swift highlight" data-lang="swift"><span class="c1">//Example 1</span>
+<span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
+<span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">):</span>
+    <span class="nf">print</span><span class="p">(</span><span class="s">"Today's horoscope is: </span><span class="se">\(</span><span class="n">response</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
+    <span class="k">break</span>
+<span class="k">case</span> <span class="o">.</span><span class="kt">Failure</span><span class="p">(</span><span class="k">let</span> <span class="nv">error</span><span class="p">):</span>
+    <span class="nf">willItToCompile</span><span class="p">(</span><span class="nv">finishLater</span><span class="p">:</span> <span class="s">"Present </span><span class="se">\(</span><span class="n">error</span><span class="se">)</span><span class="s"> to user"</span><span class="p">)</span>
+<span class="p">}</span>
+
+<span class="c1">//Example 2</span>
+<span class="kd">func</span> <span class="nf">cell</span><span class="p">(</span><span class="n">at</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Cell</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mi">0</span><span class="o">..&lt;</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">Cell</span><span class="p">(</span><span class="n">horses</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+    <span class="p">}</span>
+    <span class="k">if</span> <span class="p">(</span><span class="mi">10</span><span class="o">..&lt;</span><span class="mi">20</span><span class="p">)</span><span class="o">.</span><span class="nf">contains</span><span class="p">(</span><span class="n">index</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="kt">Cell</span><span class="p">(</span><span class="n">ponies</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>
+    <span class="p">}</span>
+    
+    <span class="nf">willItToCompile</span><span class="p">(</span><span class="nv">finishLater</span><span class="p">:</span> <span class="s">"Unicorns go here"</span><span class="p">)</span>
+<span class="p">}</span>
+</code></pre>
+<p>As you can see, the intent of this code is clearer and the true meaning of the developer is revealed.</p>
+
+<h2 id="source-compatibility">Source Compatibility</h2>
+
+<p>This is an important issue, we must stand to this shameful tradition and break it. Functions deserve to be called by their purest and true identity, we are still within the window of source breaking changes so there is no better time, the time is now!</p>
+
+<h2 id="alternatives-considered">Alternatives considered</h2>
+
+<p>Keep calling it the same shameful name to an innocent function who has done nothing but bring us joy to our development cycles and help us throughout hard times.</p>
+
+			</section>
+		</article>
+	</main>
+
+
+	<footer role="contentinfo">
+		<div class="hr"></div>
+		<div class="footer-link">
+			<a href="mailto:contact@dtorres.me" target="_blank">Email</a>
+			<a href="https://twitter.com/dtorres" target="_blank">Twitter</a>
+			
+			<a href="https://github.com/dtorres" target="_blank">GitHub</a>
+		</div>
+		<div class="copyright">Copyright &copy; Diego Torres (and Aatr tits)</div>
+	</footer>
+
+</div>
+
+
+
+</body>
+</html>
