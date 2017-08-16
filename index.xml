@@ -7,8 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Diego Torres (and Aatr tits)</copyright>
-    <lastBuildDate>Mon, 14 Aug 2017 21:54:57 +0200</lastBuildDate>
-    <atom:link href="http://dtorres.me/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Aug 2017 23:22:05 +0200</lastBuildDate>
+    
+	<atom:link href="http://dtorres.me/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Amatka</title>
+      <link>http://dtorres.me/blog/post/amatka/</link>
+      <pubDate>Tue, 15 Aug 2017 23:22:05 +0200</pubDate>
+      
+      <guid>http://dtorres.me/blog/post/amatka/</guid>
+      <description>I started reading Jagannath (a compilation of stories by Karin Tidbeck, the author) and before I realized, I was embraced by her narration style, submerged yet not drowning.
+It was easy to imagine scenery, the characters and feel moved by them.
+So after a couple stories I started reading Amatka1, with no knowledge whatsoever about it, no summary, no context or prior recommendation but a quote by Ann Leckie2 praising it.</description>
+    </item>
     
     <item>
       <title>Distance</title>
