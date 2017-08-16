@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="generator" content="Hugo 0.26" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/blog/css/normalize.css">
 <link rel="stylesheet" href="/blog/css/skeleton.css">
@@ -38,7 +38,7 @@
 <p>The main motivation to this proposal is to act as a catalyst for the community to acknowledge the identity of this function and stay true to the values bestowed upon us by Chris Lattner and his disciples, the Core Team.</p>
 
 <p>As evidenced in a quick search over a the great repository of Gitxandria we are witness to several examples of the true calling of fatalError(). A few examples are cited below for those who receive this letter in print.</p>
-<pre><code class="language-swift highlight" data-lang="swift"><span class="c1">//Example 1</span>
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="c1">//Example 1</span>
 <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
 <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">):</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"Today's horoscope is: </span><span class="se">\(</span><span class="n">response</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
@@ -58,13 +58,13 @@
     
     <span class="nf">fatalError</span><span class="p">(</span><span class="s">"Unicorns go here"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>As seen in the previous examples, the calling of fatalError is seldom that.</p>
 
 <h2 id="proposed-solution">Proposed solution</h2>
 
 <p>The proposed solution is to rename <code>fatalError(_ message: String)</code> to <code>willItToCompile(finishLater: String)</code> to convey the right terminology for it&rsquo;s calling. Here are the revised examples:</p>
-<pre><code class="language-swift highlight" data-lang="swift"><span class="c1">//Example 1</span>
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="c1">//Example 1</span>
 <span class="k">switch</span> <span class="n">result</span> <span class="p">{</span>
 <span class="k">case</span> <span class="o">.</span><span class="kt">Success</span><span class="p">(</span><span class="k">let</span> <span class="nv">response</span><span class="p">):</span>
     <span class="nf">print</span><span class="p">(</span><span class="s">"Today's horoscope is: </span><span class="se">\(</span><span class="n">response</span><span class="se">)</span><span class="s">"</span><span class="p">)</span>
@@ -84,7 +84,7 @@
     
     <span class="nf">willItToCompile</span><span class="p">(</span><span class="nv">finishLater</span><span class="p">:</span> <span class="s">"Unicorns go here"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>As you can see, the intent of this code is clearer and the true meaning of the developer is revealed.</p>
 
 <h2 id="source-compatibility">Source Compatibility</h2>

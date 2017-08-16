@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="generator" content="Hugo 0.26" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/blog/css/normalize.css">
 <link rel="stylesheet" href="/blog/css/skeleton.css">
@@ -28,7 +28,7 @@
 				
 
 <p>Basically what we are going to do is use and profit from <code>NSURLRequest</code>&rsquo;s being conformant to <code>NSCoding</code>, and a little known API from <code>NSURLProtocol</code> which allows us attach info to requests.</p>
-<pre><code class="language-objc highlight" data-lang="objc"><span class="c1">//Step 0: For the purpose of this gist, we'll already have a 
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">//Step 0: For the purpose of this gist, we'll already have a 
 //background session setup and assume a bunch of stuff.
 </span><span class="n">NSURLSession</span> <span class="o">*</span><span class="n">bgSession</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLSession</span> <span class="nf">magicMethodWhichGivesMeTheAlreadySetupSession</span><span class="p">];</span> 
 <span class="c1">//Geeez, Methods are long in Obj-C.
@@ -55,7 +55,7 @@
 </span><span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">task</span><span class="p">;</span>
 <span class="n">task</span> <span class="o">=</span> <span class="p">[</span><span class="n">bgSession</span> <span class="nf">downloadTaskWithRequest</span><span class="p">:</span><span class="n">mutableRequest</span><span class="p">];</span>
 <span class="p">[</span><span class="n">task</span> <span class="nf">resume</span><span class="p">];</span>
-</code></pre>
+</code></pre></div>
 <p>And now, now your app <strong>DIEEEES, DIE APP, DIEEEEE.</strong><br />
 OK, now that we took care of that, well, that&rsquo;s it folks, bye!.</p>
 
@@ -75,7 +75,7 @@ OK, now that we took care of that, well, that&rsquo;s it folks, bye!.</p>
 
 <p>Sure!, at some point, either your app was launched by the system or the user and you got ahold of the task again.<br />
 How? well, go watch the nice talk by <a href="https://twitter.com/purpleyay">@purpleyay</a><sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>, she tells you how.</p>
-<pre><code class="language-objc highlight" data-lang="objc"><span class="c1">//Step 5: Get ahold of your task
+<div class="highlight"><pre><code class="language-objc" data-lang="objc"><span class="c1">//Step 5: Get ahold of your task
 </span><span class="n">NSURLSessionTask</span> <span class="o">*</span><span class="n">ourPreviousTask</span> <span class="o">=</span> <span class="p">...;</span>
 <span class="c1">//Wow, I love I can get away with code with 3 simple dots.
 </span>
@@ -83,7 +83,7 @@ How? well, go watch the nice talk by <a href="https://twitter.com/purpleyay">@pu
 </span><span class="n">NSURLRequest</span> <span class="o">*</span><span class="n">originalRequest</span> <span class="o">=</span> <span class="n">ourPreviousTask</span><span class="p">.</span><span class="n">originalRequest</span>
 <span class="n">NSDictionary</span> <span class="o">*</span><span class="n">aBunchOfValues</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSURLProtocol</span> <span class="nf">propertyForKey</span><span class="p">:</span><span class="n">DAKey</span> 
                                     <span class="nf">inRequest</span><span class="p">:</span><span class="n">originalRequest</span><span class="p">];</span>
-</code></pre>
+</code></pre></div>
 <p>That&rsquo;s it, you have all the info you need</p>
 
 <p><strong>NOTE:</strong> I haven&rsquo;t tested the limits of storage in this method but the API was done to hold simple keys and values so don&rsquo;t you dare store your whole database of kitten images there. Thank you.</p>

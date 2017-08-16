@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Eso po</title>
-    <link>http://dtorres.me/blog/post/index.xml</link>
+    <link>http://dtorres.me/blog/post/</link>
     <description>Recent content in Posts on Eso po</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -16,21 +16,17 @@
       <pubDate>Mon, 14 Aug 2017 21:54:57 +0200</pubDate>
       
       <guid>http://dtorres.me/blog/post/distance-verses/</guid>
-      <description>&lt;p&gt;For days we&amp;rsquo;ve talked.&lt;br /&gt;
-Long hours at times&lt;br /&gt;
-Of your problems, and mine.&lt;/p&gt;
-
-&lt;p&gt;Sometimes neglecting your sleep&lt;br /&gt;
-Sometimes neglecting mine.&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;re hurting, I know&lt;br /&gt;
-I yearn to hug you&lt;br /&gt;
-distance makes it hard&lt;/p&gt;
-
-&lt;p&gt;Hours have passed.&lt;br /&gt;
-My crave for hugging,&lt;br /&gt;
-has not.&lt;/p&gt;
-</description>
+      <description>For days we&amp;rsquo;ve talked.
+Long hours at times
+Of your problems, and mine.
+Sometimes neglecting your sleep
+Sometimes neglecting mine.
+You&amp;rsquo;re hurting, I know
+I yearn to hug you
+distance makes it hard
+Hours have passed.
+My crave for hugging,
+has not.</description>
     </item>
     
     <item>
@@ -39,29 +35,8 @@ has not.&lt;/p&gt;
       <pubDate>Sun, 02 Jul 2017 19:01:09 +0200</pubDate>
       
       <guid>http://dtorres.me/blog/post/thoughts-on-afphoto/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using Photoshop to process and develop the RAW pictures I take with my Canon 80D, and it does a great job at it, but it is an overkill of a tool to have considering most of my time is spent in the RAW Camera screen.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been aware of &lt;a href=&#34;https://affinity.serif.com/en-us/photo/&#34;&gt;Affinity Photo&lt;/a&gt; for a while now but I hadn&amp;rsquo;t felt compelled to try it until the iPad version came out.&lt;br /&gt;
-A couple of weeks ago I tried and purchased &lt;a href=&#34;https://affinity.serif.com/en-us/photo/ipad/&#34;&gt;Affinity Photo for iPad&lt;/a&gt; (even though I don&amp;rsquo;t have an iPad yet, buying one soon) and was impressed at the versatility of the tooling so I took the trial version of the Mac for a spin.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;It is really (buttery even) smooth due to extensive use of Apple technologies (Open GL, GCD and Core Graphics), leaving Photoshop in shame. Previewing changes will never be the same after you&amp;rsquo;ve tried it.&lt;/p&gt;
-
-&lt;p&gt;I was able to get results as impressive as I could with Photoshop albeit with a bit more of time spent in Affinity Photo tweaking the knobs (mainly due to the former having presets and auto features).&lt;/p&gt;
-
-&lt;p&gt;However, it does not support non-destructive processing (with an XMP sidecar) which means, if I want to come back and tweak the picture a bit more, I must apply to the RAW file the same settings I once did (ha, I already forgot them).&lt;br /&gt;
-The other option is to edit over the “revealed” picture, but I’m under the impression that at that point, all the extra bits provided by the RAW image are gone AND the afphoto format (as well as PSD) is unacceptably huge for this kind of editing when you want to long term backup a file that was roughly 15% the size.&lt;/p&gt;
-
-&lt;p&gt;I will be sticking to Photoshop on the Mac meanwhile because of that one very important feature to my use case and will continue Affinity Photo in the iPad for light and on the go editing. That way I can continue to enjoy the smoothness of it, follow its development and (hopefully) easily switch to the Mac version when they support XMP.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;Half of my pictures of Rostock in &lt;a href=&#34;https://500px.com/warorface&#34;&gt;500px&lt;/a&gt; were edited with Affinity Photo. Like this &lt;a href=&#34;https://500px.com/photo/217960623/violet-delights-by-diego-torres?ctx_page=1&amp;amp;from=user&amp;amp;user_id=6502810&#34;&gt;one&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>I&amp;rsquo;ve been using Photoshop to process and develop the RAW pictures I take with my Canon 80D, and it does a great job at it, but it is an overkill of a tool to have considering most of my time is spent in the RAW Camera screen.
+I&amp;rsquo;ve been aware of Affinity Photo for a while now but I hadn&amp;rsquo;t felt compelled to try it until the iPad version came out.</description>
     </item>
     
     <item>
@@ -70,19 +45,9 @@ The other option is to edit over the “revealed” picture, but I’m under the
       <pubDate>Tue, 20 Jun 2017 13:13:17 +0200</pubDate>
       
       <guid>http://dtorres.me/blog/post/crushes/</guid>
-      <description>&lt;p&gt;I like having a crush, the expectation, planning, hope and possibilities that come from this seemingly unexpected feeling.&lt;/p&gt;
-
-&lt;p&gt;I dread however, having to put myself in the other person perspective as this is a mostly one sided and proofless experience, only having met them a short while ago, I have barely any context or information on how they would react if they were to find out I like them.&lt;/p&gt;
-
-&lt;p&gt;This in turn makes me anxious and hyperaware of my actions when we are together, hindering what, it seems, people like most about me, my improvised jokes and attention to detail on random things. My most precious attributes are shut down.&lt;/p&gt;
-
-&lt;p&gt;How do I communicate my feelings to this person I&amp;rsquo;ve just met, that maybe, happens to be a completely different person to the one I&amp;rsquo;ve gotten to know in our handful of encounters? Or should I, in the first place?&lt;/p&gt;
-
-&lt;p&gt;The logical answer to this, is time, getting to know each other more, maybe even light flirting (I am really, really awful at it, sorry), but this feeling abhors time, knows no patience and drives me mad.&lt;br /&gt;
-I want nothing more than lay down together in a park, cuddle and talk about all those seemingly unimportant details that no one but us seems to enjoy.&lt;/p&gt;
-
-&lt;p&gt;And yet, here I am, left with a crush on you.&lt;/p&gt;
-</description>
+      <description>I like having a crush, the expectation, planning, hope and possibilities that come from this seemingly unexpected feeling.
+I dread however, having to put myself in the other person perspective as this is a mostly one sided and proofless experience, only having met them a short while ago, I have barely any context or information on how they would react if they were to find out I like them.
+This in turn makes me anxious and hyperaware of my actions when we are together, hindering what, it seems, people like most about me, my improvised jokes and attention to detail on random things.</description>
     </item>
     
     <item>
@@ -91,104 +56,21 @@ I want nothing more than lay down together in a park, cuddle and talk about all 
       <pubDate>Sat, 04 Mar 2017 12:23:43 +0100</pubDate>
       
       <guid>http://dtorres.me/blog/post/tipping-point/</guid>
-      <description>&lt;p&gt;&lt;em&gt;It felt great, just like the first time they cuddled, bodies close, his arms around her and peace. The same peace that kept her from leaving that first night.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;He lift his head and whispered into her ear:&lt;br /&gt;
-– How would you feel about having kids?&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Oh no, it&amp;rsquo;s been two years, two wonderful if intense years together, he is wonderful, and stupid me hadn&amp;rsquo;t told him. Oh no.&lt;/em&gt;&lt;br /&gt;
-– I am infertile – she said, as tears started running down her cheeks.&lt;br /&gt;
-– Oh.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Just oh? Oh no, oh god no.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Just as she finished that thought, he slid her arms under her and turned her to face him.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;His face, oh, his beautiful face.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;Gently, he put his hand on her cheeks, brushed her tears away.&lt;br /&gt;
-– How would you feel about having kids? - he repeated, finishing in a smile.&lt;/p&gt;
-
-&lt;p&gt;&amp;ldquo;I&amp;hellip; Yes&amp;rdquo; - She closed her eyes as her mind drifted on how she would propose to him&lt;/p&gt;
-</description>
+      <description>It felt great, just like the first time they cuddled, bodies close, his arms around her and peace. The same peace that kept her from leaving that first night.
+He lift his head and whispered into her ear:
+– How would you feel about having kids?
+Oh no, it&amp;rsquo;s been two years, two wonderful if intense years together, he is wonderful, and stupid me hadn&amp;rsquo;t told him. Oh no.
+– I am infertile – she said, as tears started running down her cheeks.</description>
     </item>
     
     <item>
       <title>[Proposal] Rename fatalError() API</title>
-      <link>http://dtorres.me/blog/post/proposal-fatalError/</link>
+      <link>http://dtorres.me/blog/post/proposal-fatalerror/</link>
       <pubDate>Fri, 06 Jan 2017 22:53:25 +0100</pubDate>
       
-      <guid>http://dtorres.me/blog/post/proposal-fatalError/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The following text was first posted in the Swift evolution mailing list&lt;/p&gt;
-
-&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
-&lt;p&gt;This function was introduced along others to halt execution of the running instance to convey a state of affairs without resolution whatsoever. This proposal lays the case that this function is not performing its stated mission and attempts to help it come forward with its real intentions in order  to have a better conformance with the Swift naming guidelines.&lt;/p&gt;
-
-&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
-
-&lt;p&gt;The main motivation to this proposal is to act as a catalyst for the community to acknowledge the identity of this function and stay true to the values bestowed upon us by Chris Lattner and his disciples, the Core Team.&lt;/p&gt;
-
-&lt;p&gt;As evidenced in a quick search over a the great repository of Gitxandria we are witness to several examples of the true calling of fatalError(). A few examples are cited below for those who receive this letter in print.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-swift highlight&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Example 1&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Success&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;Today&#39;s horoscope is: &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Failure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;fatalError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;Present &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; to user&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;//Example 2&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;horses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ponies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&#34;nf&#34;&gt;fatalError&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;Unicorns go here&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As seen in the previous examples, the calling of fatalError is seldom that.&lt;/p&gt;
-
-&lt;h2 id=&#34;proposed-solution&#34;&gt;Proposed solution&lt;/h2&gt;
-
-&lt;p&gt;The proposed solution is to rename &lt;code&gt;fatalError(_ message: String)&lt;/code&gt; to &lt;code&gt;willItToCompile(finishLater: String)&lt;/code&gt; to convey the right terminology for it&amp;rsquo;s calling. Here are the revised examples:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-swift highlight&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Example 1&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;switch&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;result&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Success&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;Today&#39;s horoscope is: &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;response&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;break&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;case&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Failure&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;):&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;willItToCompile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;finishLater&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&#34;Present &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;error&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; to user&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;//Example 2&lt;/span&gt;
-&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;at&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;horses&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;10&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;20&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Cell&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ponies&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;index&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;])&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&#34;nf&#34;&gt;willItToCompile&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;finishLater&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&#34;Unicorns go here&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;As you can see, the intent of this code is clearer and the true meaning of the developer is revealed.&lt;/p&gt;
-
-&lt;h2 id=&#34;source-compatibility&#34;&gt;Source Compatibility&lt;/h2&gt;
-
-&lt;p&gt;This is an important issue, we must stand to this shameful tradition and break it. Functions deserve to be called by their purest and true identity, we are still within the window of source breaking changes so there is no better time, the time is now!&lt;/p&gt;
-
-&lt;h2 id=&#34;alternatives-considered&#34;&gt;Alternatives considered&lt;/h2&gt;
-
-&lt;p&gt;Keep calling it the same shameful name to an innocent function who has done nothing but bring us joy to our development cycles and help us throughout hard times.&lt;/p&gt;
-</description>
+      <guid>http://dtorres.me/blog/post/proposal-fatalerror/</guid>
+      <description>Note: The following text was first posted in the Swift evolution mailing list
+Introduction This function was introduced along others to halt execution of the running instance to convey a state of affairs without resolution whatsoever. This proposal lays the case that this function is not performing its stated mission and attempts to help it come forward with its real intentions in order to have a better conformance with the Swift naming guidelines.</description>
     </item>
     
     <item>
@@ -197,180 +79,10 @@ I want nothing more than lay down together in a park, cuddle and talk about all 
       <pubDate>Mon, 21 Nov 2016 00:20:05 +0100</pubDate>
       
       <guid>http://dtorres.me/blog/post/collatz-indexset/</guid>
-      <description>
-
-&lt;p&gt;I was watching &lt;a href=&#34;https://www.youtube.com/channel/UCoxcjq-8xIDTYp3uz647V5A&#34;&gt;Numberphile&lt;/a&gt; videos when I stumbled upon the &lt;a href=&#34;https://www.youtube.com/watch?v=5mFpVDpKX70&#34;&gt;Collatz conjecture&lt;/a&gt;. It’s a mind boggling complex positive integer sequence derived from a function with 2 rules:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;If n is even, divide by 2&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;If n is odd, triple it and add one&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;This process is repeated until 1 is reached, which, as seen from the previous rules, recurses into [1, 4, 2, 1…]. But, do all numbers reach 1 eventually? Is there any number that short circuits this recurses in another way? such that:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;even X, odd Y: [X, Y, Y*3+1,…,X]&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The conjecture says there is no such number, so far nobody has come up with such number proving otherwise and to further complicate things, it’s impossible to algorithmically find such a number&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-
-&lt;p&gt;When I considered the problem the first time, it struck me as “obvious” that any number will converge to 1. Due to the nature of the first rule, the sequence has a “root branch” consisting of the power of 2. The second rule is there to “correct” the path of the sequence back to that root given that it will rollercoaster the sequence until it finds a power of 2.&lt;/p&gt;
-
-&lt;h2 id=&#34;enter-the-indexsets&#34;&gt;Enter the IndexSets&lt;/h2&gt;
-
-&lt;p&gt;No longer interested in finding proof for this, I wanted to illustrate the periodicity of branches until they reached the current tree, to do this I needed a set to quickly find if a number was already part of the tree but considering we are talking of relatively consecutive numbers with a rapidly increasing growth, a simple set would be huge and probably explode my computer.&lt;br /&gt;
-IndexSets are a great solution here, it allows to quickly find a number and efficiently store the found numbers, except… there is no IndexSet structure in Swift&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:2&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;implementing-indexset&#34;&gt;Implementing IndexSet&lt;/h2&gt;
-
-&lt;p&gt;An IndexSet contains seemingly unordered numbers, but exploiting the sequentiality, they can be grouped in sorted ranges, so I will use &lt;code&gt;Array&amp;lt;Range&amp;lt;Int&amp;gt;&amp;gt;&lt;/code&gt; &lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:3&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. To run the sequence, only insertion and search are required so I’ll forgo the rest methods of a Set for brevity.&lt;br /&gt;
-Both methods shall have a O(log(n)) complexity following a &lt;a href=&#34;https://en.wikipedia.org/wiki/Binary_search_algorithm&#34;&gt;binary search&lt;/a&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-swift highlight&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;kd&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;IndexSet&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;private(set)&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;private&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;_indexOfRangeContainingOrAdjacent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;member&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Bool&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;startIndex&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;max&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endIndex&lt;/span&gt;
-        
-        &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;max&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;mid&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;member&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;max&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mid&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;member&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;min&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;mid&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mid&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;true&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;min&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;kc&#34;&gt;false&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;member&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Bool&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;_indexOfRangeContainingOrAdjacent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;member&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    
-    &lt;span class=&#34;k&#34;&gt;mutating&lt;/span&gt; &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;guard&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;isEmpty&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        &lt;span class=&#34;nf&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;_indexOfRangeContainingOrAdjacent&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;contains&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        
-        &lt;span class=&#34;c1&#34;&gt;//New member is outside upper bound&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;endIndex&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;c1&#34;&gt;//New member can be added to adjacent range&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        
-        &lt;span class=&#34;c1&#34;&gt;//New member can be added to adjacent range&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt;
-            
-            &lt;span class=&#34;c1&#34;&gt;//Merge with previous adjacent if needed&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-                &lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;prevRange&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;remove&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;prevRange&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        
-        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
-            &lt;span class=&#34;c1&#34;&gt;//New member can be added to adjacent range&lt;/span&gt;
-            &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lowerBound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-                &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;
-                &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt;
-            &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-        
-        &lt;span class=&#34;c1&#34;&gt;//New member is not adjacent to existing ranges&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;range&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;newMember&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;range&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;at&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;idx&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Now that we have a simplified IndexSet, I present you, the utterly simple Collatz conjecture:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-swift highlight&#34; data-lang=&#34;swift&#34;&gt;&lt;span class=&#34;kd&#34;&gt;extension&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;IndexSet&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;lowestNotContainedMember&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;first&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upperBound&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;collatzFound&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;IndexSet&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;even&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;/&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;odd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mf&#34;&gt;3*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-
-&lt;span class=&#34;kd&#34;&gt;func&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;collatzBranch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;branch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;kt&#34;&gt;Int&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;]()&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;var&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;lastNum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;num&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;while&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;!&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;contains&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-        &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;append&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-        &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;even&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;else&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-            &lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;odd&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lastNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-        &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;return&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;numberOfBranches&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;1000&lt;/span&gt;
-&lt;span class=&#34;k&#34;&gt;for&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;_&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;in&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;..&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;numberOfBranches&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;nextNum&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;lowestNotContainedMember&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nextNum&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;%&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;==&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;0&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-    	&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;nextNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-		&lt;span class=&#34;k&#34;&gt;continue&lt;/span&gt;
-    &lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-    &lt;span class=&#34;k&#34;&gt;let&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;branch&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;collatzBranch&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;num&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;nextNum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-    &lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;forEach&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;insert&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$0&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)}&lt;/span&gt;
-    &lt;span class=&#34;nf&#34;&gt;print&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&#34;&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;branch&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt; {&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;count&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;, &lt;/span&gt;&lt;span class=&#34;se&#34;&gt;\(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;collatzFound&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ranges&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;capacity&lt;/span&gt;&lt;span class=&#34;se&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;}&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And here is a sample of the output with the first 5 “branches”&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[3, 10, 5, 16, 8, 4] {4, 8}
-[7, 22, 11, 34, 17, 52, 26, 13, 40, 20] {10, 16}
-[9, 28, 14] {10, 16}
-[15, 46, 23, 70, 35, 106, 53, 160, 80] {13, 16}
-[19, 58, 29, 88, 44] {15, 16}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In a run of 1000 iterations, the IndexSet “holds” 8105 entries in 3536 ranges. Isn’t that cool? (I mean, you are still reading after all).&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;&lt;a href=&#34;https://en.m.wikipedia.org/wiki/Collatz_conjecture#Undecidable_generalizations&#34;&gt;Collatz conjecture - Wikipedia&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:2&#34;&gt;In the standard library that is. There is one in Foundation which involves bridging and a lame article.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:2&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:3&#34;&gt;Why not a ClosedRange? I didn’t think of them at the time and an open range works just fine.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:3&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>I was watching Numberphile videos when I stumbled upon the Collatz conjecture. It’s a mind boggling complex positive integer sequence derived from a function with 2 rules:
+ If n is even, divide by 2
+ If n is odd, triple it and add one
+  This process is repeated until 1 is reached, which, as seen from the previous rules, recurses into [1, 4, 2, 1…]. But, do all numbers reach 1 eventually?</description>
     </item>
     
     <item>
@@ -379,16 +91,9 @@ Both methods shall have a O(log(n)) complexity following a &lt;a href=&#34;https
       <pubDate>Mon, 08 Aug 2016 00:00:00 +0100</pubDate>
       
       <guid>http://dtorres.me/blog/post/gif-is-dead/</guid>
-      <description>&lt;p&gt;Nowadays when we use the word GIF, hardly it refers to the file format, rather we talk about a really short motion picture (often loopable) without sound.&lt;br /&gt;
-We hardly think of the actual file format used to display these (unless it takes too long to load, then it surely is a G.I.F.)&lt;/p&gt;
-
-&lt;p&gt;As such I think we can at last please Steve Wilhite and give him the pronunciation he always wanted by introducing this separation of concepts apt for today:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;G.I.F.&lt;/strong&gt;: Graphics Interchangeable Format. This file format was originally preferred to deliver animated short movies on the internet (Pronounced with a J)&lt;br /&gt;
-&lt;strong&gt;GIF&lt;/strong&gt;: Short (often loopable) motion picture without sound (This one is pronounced with a hard G)&lt;/p&gt;
-
-&lt;p&gt;Next time you say the word, think about it, which one did you really mean?&lt;/p&gt;
-</description>
+      <description>Nowadays when we use the word GIF, hardly it refers to the file format, rather we talk about a really short motion picture (often loopable) without sound.
+We hardly think of the actual file format used to display these (unless it takes too long to load, then it surely is a G.I.F.)
+As such I think we can at last please Steve Wilhite and give him the pronunciation he always wanted by introducing this separation of concepts apt for today:</description>
     </item>
     
     <item>
@@ -397,78 +102,8 @@ We hardly think of the actual file format used to display these (unless it takes
       <pubDate>Mon, 02 Nov 2015 00:00:00 +0100</pubDate>
       
       <guid>http://dtorres.me/blog/post/storing-info-nsurlrequest/</guid>
-      <description>
-
-&lt;p&gt;Basically what we are going to do is use and profit from &lt;code&gt;NSURLRequest&lt;/code&gt;&amp;rsquo;s being conformant to &lt;code&gt;NSCoding&lt;/code&gt;, and a little known API from &lt;code&gt;NSURLProtocol&lt;/code&gt; which allows us attach info to requests.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-objc highlight&#34; data-lang=&#34;objc&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Step 0: For the purpose of this gist, we&#39;ll already have a 
-//background session setup and assume a bunch of stuff.
-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLSession&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bgSession&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLSession&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;magicMethodWhichGivesMeTheAlreadySetupSession&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt; 
-&lt;span class=&#34;c1&#34;&gt;//Geeez, Methods are long in Obj-C.
-&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;//IMPORTANT: Request must be mutable in order for this to work. 
-//Got an immutable one?. Make a copy. Can&#39;t? Well, Make it so!.
-//Step 1: Setup your basic request.
-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSMutableURLRequest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mutableRequest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...;&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;//Step 2: Have some values to store under our request.
-//IMPORTANT 2: All Keys and values must be encodable, so no 
-//custom classes or you will cry when your device explodes.
-//You have been notified.
-&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;static&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;NSString&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;k&#34;&gt;const&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;DAKey&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;@&#34;ThePathToTheTruth&#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;NSDictionary&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aBunchOfValues&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;@{...};&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;//Step 3: Store the values using NSURLProtocol API.
-&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLProtocol&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;setProperty&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aBunchOfValues&lt;/span&gt; 
-                    &lt;span class=&#34;nf&#34;&gt;forKey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DAKey&lt;/span&gt; 
-                 &lt;span class=&#34;n&#34;&gt;inRequest&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mutableRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-
-&lt;span class=&#34;c1&#34;&gt;//Step 4: Create your task and resume it. 
-//(We gotta do the request sometime right?)
-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLSessionTask&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;bgSession&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;downloadTaskWithRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mutableRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-&lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;task&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;resume&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;And now, now your app &lt;strong&gt;DIEEEES, DIE APP, DIEEEEE.&lt;/strong&gt;&lt;br /&gt;
-OK, now that we took care of that, well, that&amp;rsquo;s it folks, bye!.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash; &lt;em&gt;hey, what happened with my request and my bunch of values!, the app is dead, I&amp;rsquo;ll never get them back.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&#34;coming-back-from-the-8th-dead-lock-of-hell&#34;&gt;Coming back from the 8th dead(lock) of hell&lt;/h2&gt;
-
-&lt;p&gt;Calm down&amp;hellip; remember &lt;code&gt;NSURLRequest&lt;/code&gt;&amp;rsquo;s conform to &lt;code&gt;NSCoding&lt;/code&gt;? well, &lt;code&gt;NSURLSession&lt;/code&gt;&amp;rsquo;s have to store the info of the request &lt;em&gt;somewhere&lt;/em&gt;, well, turns out they use &lt;code&gt;NSCoding&lt;/code&gt; to do that, which is kinda the duh solution but you never know with Apple.&lt;/p&gt;
-
-&lt;p&gt;So&amp;hellip; &lt;code&gt;NSURLProtocol&lt;/code&gt; basically uses some private methods to modify the info of the &lt;code&gt;NSURLMutableRequest&lt;/code&gt;. (See, that&amp;rsquo;s why it has to be mutable). Which then tags along when encoded by the session.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ndash; &lt;em&gt;Oh, OK, got it, can you show me how to get the info back out now?&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Sure!, at some point, either your app was launched by the system or the user and you got ahold of the task again.&lt;br /&gt;
-How? well, go watch the nice talk by &lt;a href=&#34;https://twitter.com/purpleyay&#34;&gt;@purpleyay&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, she tells you how.&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-objc highlight&#34; data-lang=&#34;objc&#34;&gt;&lt;span class=&#34;c1&#34;&gt;//Step 5: Get ahold of your task
-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLSessionTask&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ourPreviousTask&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;...;&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;//Wow, I love I can get away with code with 3 simple dots.
-&lt;/span&gt;
-&lt;span class=&#34;c1&#34;&gt;//Step 6 (And finally, yey!): Getting the info out.
-&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLRequest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;originalRequest&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;ourPreviousTask&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;originalRequest&lt;/span&gt;
-&lt;span class=&#34;n&#34;&gt;NSDictionary&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;*&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;aBunchOfValues&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;NSURLProtocol&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;propertyForKey&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;DAKey&lt;/span&gt; 
-                                    &lt;span class=&#34;nf&#34;&gt;inRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;originalRequest&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;That&amp;rsquo;s it, you have all the info you need&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; I haven&amp;rsquo;t tested the limits of storage in this method but the API was done to hold simple keys and values so don&amp;rsquo;t you dare store your whole database of kitten images there. Thank you.&lt;/p&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:1&#34;&gt;&lt;a href=&#34;https://realm.io/news/gwendolyn-weston-ios-background-networking/&#34;&gt;https://realm.io/news/gwendolyn-weston-ios-background-networking/&lt;/a&gt;
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
+      <description>Basically what we are going to do is use and profit from NSURLRequest&amp;rsquo;s being conformant to NSCoding, and a little known API from NSURLProtocol which allows us attach info to requests.
+//Step 0: For the purpose of this gist, we&#39;ll already have a //background session setup and assume a bunch of stuff. NSURLSession *bgSession = [NSURLSession magicMethodWhichGivesMeTheAlreadySetupSession]; //Geeez, Methods are long in Obj-C.  //IMPORTANT: Request must be mutable in order for this to work.</description>
     </item>
     
   </channel>

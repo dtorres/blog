@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
 <meta charset="utf-8">
-<meta name="generator" content="Hugo 0.18-DEV" />
+<meta name="generator" content="Hugo 0.26" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="/blog/css/normalize.css">
 <link rel="stylesheet" href="/blog/css/skeleton.css">
@@ -53,7 +53,7 @@ IndexSets are a great solution here, it allows to quickly find a number and effi
 
 <p>An IndexSet contains seemingly unordered numbers, but exploiting the sequentiality, they can be grouped in sorted ranges, so I will use <code>Array&lt;Range&lt;Int&gt;&gt;</code> <sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup>. To run the sequence, only insertion and search are required so I’ll forgo the rest methods of a Set for brevity.<br />
 Both methods shall have a O(log(n)) complexity following a <a href="https://en.wikipedia.org/wiki/Binary_search_algorithm">binary search</a>.</p>
-<pre><code class="language-swift highlight" data-lang="swift"><span class="kd">struct</span> <span class="kt">IndexSet</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">struct</span> <span class="kt">IndexSet</span> <span class="p">{</span>
     <span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">ranges</span><span class="p">:</span> <span class="p">[</span><span class="kt">Range</span><span class="o">&lt;</span><span class="kt">Int</span><span class="o">&gt;</span><span class="p">]</span>
 
     <span class="kd">private</span> <span class="kd">func</span> <span class="nf">_indexOfRangeContainingOrAdjacent</span><span class="p">(</span><span class="n">_</span> <span class="nv">member</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">Int</span><span class="p">,</span> <span class="kt">Bool</span><span class="p">)</span> <span class="p">{</span>
@@ -131,9 +131,9 @@ Both methods shall have a O(log(n)) complexity following a <a href="https://en.w
         <span class="n">ranges</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="n">range</span><span class="p">,</span> <span class="nv">at</span><span class="p">:</span> <span class="n">idx</span><span class="p">)</span>
     <span class="p">}</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>Now that we have a simplified IndexSet, I present you, the utterly simple Collatz conjecture:</p>
-<pre><code class="language-swift highlight" data-lang="swift"><span class="kd">extension</span> <span class="kt">IndexSet</span> <span class="p">{</span>
+<div class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">extension</span> <span class="kt">IndexSet</span> <span class="p">{</span>
     <span class="kd">func</span> <span class="nf">lowestNotContainedMember</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span> <span class="p">{</span>
         <span class="k">return</span> <span class="n">ranges</span><span class="o">.</span><span class="n">first</span><span class="o">!.</span><span class="n">upperBound</span>
     <span class="p">}</span>
@@ -174,7 +174,7 @@ Both methods shall have a O(log(n)) complexity following a <a href="https://en.w
     <span class="n">branch</span><span class="o">.</span><span class="n">forEach</span><span class="p">{</span><span class="n">collatzFound</span><span class="o">.</span><span class="nf">insert</span><span class="p">(</span><span class="nv">$0</span><span class="p">)}</span>
     <span class="nf">print</span><span class="p">(</span> <span class="s">"</span><span class="se">\(</span><span class="n">branch</span><span class="se">)</span><span class="s"> {</span><span class="se">\(</span><span class="n">collatzFound</span><span class="o">.</span><span class="n">ranges</span><span class="o">.</span><span class="n">count</span><span class="se">)</span><span class="s">, </span><span class="se">\(</span><span class="n">collatzFound</span><span class="o">.</span><span class="n">ranges</span><span class="o">.</span><span class="n">capacity</span><span class="se">)</span><span class="s">}"</span><span class="p">)</span>
 <span class="p">}</span>
-</code></pre>
+</code></pre></div>
 <p>And here is a sample of the output with the first 5 “branches”</p>
 
 <pre><code>[3, 10, 5, 16, 8, 4] {4, 8}

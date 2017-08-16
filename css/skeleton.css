@@ -315,7 +315,7 @@ code {
   border: 1px solid #E1E1E1;
   border-radius: 4px; }
 pre > code {
-  display: inline-block;
+  display: block;
   padding: 1rem 1.5rem;
   white-space: pre; }
 
